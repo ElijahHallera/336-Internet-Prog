@@ -1,0 +1,41 @@
+<!doctype html>
+ <html>
+     <head>
+         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <title> Third-Party API </title>
+         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+         rel="stylesheet" 
+         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+         crossorigin="anonymous">
+         <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+         <script src = "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+         <script src = "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+         <link href = "app.css" rel = "stylesheet" type = "text/css">  
+     </head>
+     
+     
+<header> Pixabay Image Search</header>
+<br>
+<body>
+    
+    <label id = "csskeyword"> Keyword:</label><input type = "text" name = "keyword" id = "keyword"><br>
+                    <span id="keywordError"></span>
+    <label id = "csskeyword">Orientation:</label> 
+    <select id = "orientation" name = "orientation">
+        <option value = "horizontal">Horizontal </option>
+        <option value = "vertical">Vertical</option>
+    </select>
+    <input type="submit" button type="button" class="btn btn-primary">
+    </br>
+    </br>
+    <h1>Images</h1><br>
+    <span id = "likes"></span>
+     <span id = break></span>
+    <span id = "previewURL"></span><br>
+
+    </br>
+    </br>
+    <script src = "javascript.js"></script>
+</body>
+  
+</html>

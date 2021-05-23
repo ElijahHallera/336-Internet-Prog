@@ -1,0 +1,42 @@
+ <%- include('templates/header') -%>
+ 
+ <body>
+        <header>
+            <name1> Computer Science Information </name1>
+            <nav>
+                <ul>
+                    <li> <a href = "/home" > Home </a> </li>
+                    <li> <a href = "/proglang"> Programming Languages </a> </li>
+                    <li> <a href = "/viruses" id = "currentPage"> Viruses </a> </li>
+                    <li> <a href = "/compnet"> Computer Networks </a> </li>
+                </ul>
+            </nav>
+        </header>
+    
+    <figure class = flex-container>
+        <img src = "VIRUSPHOTO.png" alt = "virus photo" id = "homePhotos">
+    </figure>
+    
+    <main>
+    <p id = "PLhead">Viruses</p2>
+    </main>
+    
+    <main id = "PLmain">
+        <p>Definition: A computer virus is a type of computer program that replicates itself by modifying other computer programs using its own code.</p>
+        <p>History: The Creeper virus was first detected on ARPANET, the precurson to the Internet, in the early 1970s. 
+        Creeper was a  self-replicating program written by Bob Thomas at BBN Technologies in 1971. 
+        Creeper used the ARPANET to infect DEC PDP-10 computers running the TENEX operating system. 
+        It gained access via the ARPANET and copied itself to the remote system where the message, "I'm the creeper, catch me if you can!" was displayed.</p>
+        <p>Modern Usage: There are many phases during a virus as well as types of computer virus. 
+        Viruses have an infection mechanism, a trigger, payload, and copying phase. 
+        Many viruses today can be transmitted through .exe files, emails, documents, and many other types of files.</p>
+    </main>
+    
+    <main>
+        <p><a href = "https://en.wikipedia.org/wiki/Computer_virus#Operations_and_functions" id = "sourceText"> Source: https://en.wikipedia.org/wiki/Computer_virus#Operations_and_functions </a></p>
+    </main>
+    
+    </br>
+    </br>
+
+<%- include('templates/footer') -%>

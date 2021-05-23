@@ -1,0 +1,45 @@
+<%- include ('templates/header'); -%>
+
+</br>
+</br>
+
+<div class='container'>
+    <div class='jumbotron'>
+        <h1 align="center"> Author Results </h1>
+        <div class='row'>
+            <div class='col-sm-4'></div>
+            <button class='col-sm-4 btn btn-success btn-block' onclick='location.href="/";'>Search Again</button>
+            <div class='col-sm-4'></div>
+        </div>
+    </div>
+    
+    <div class='row'>
+        <%if(!author){%>
+            <h1 class='col-sm-12 notfound'>Author Not Found!</h1>
+        <%}
+        else{%>
+            <img class='col-sm-4 portrait' src=<%=author.portrait%> />
+		    <div class='col-sm-4 info'>
+		        <h3><%=author.firstName%> <%=author.lastName%></h3>
+		        <div> <strong>Born:</strong> <%=author.dob%></div>
+		        <div> <strong>Dead:</strong> <%=author.dod%></div>
+		        <div> <strong>Sex:</strong> <%=author.sex%></div>
+		        <div> <strong>Profession:</strong> <%=author.profession%></div>
+		        <div> <strong>Country:</strong> <%=author.country%></div>
+		        <div class='bio'><%=author.biography%></div>
+		        </br>
+		        <a href='/author/<%=author.authorId%>'><h2><u>Quotes</u></h2></a>
+		    </div>
+        <%}%>
+	</div>
+	</br>
+    </br>
+</div>
+
+</br>
+</br>
+
+<%- include ('templates/footer'); -%>
+
+</br>
+</br>

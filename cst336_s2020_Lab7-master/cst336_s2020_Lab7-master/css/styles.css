@@ -1,0 +1,20 @@
+.jumbotron{
+    color: black;
+    text-align: center;
+    background-color: teal;
+    border-bottom: 5px solid black;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+body{
+    background-color: beige;
+}

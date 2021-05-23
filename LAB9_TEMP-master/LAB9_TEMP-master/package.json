@@ -1,0 +1,26 @@
+{
+  "name": "temp_lab9",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElijahHallera/LAB9_TEMPORARY.git"
+  },
+  "author": "Elijah Hallera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElijahHallera/LAB9_TEMPORARY/issues"
+  },
+  "homepage": "https://github.com/ElijahHallera/LAB9_TEMPORARY#readme",
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "heroku": "^7.39.3",
+    "mysql": "^2.18.1"
+  }
+}

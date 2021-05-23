@@ -1,0 +1,12 @@
+body {
+    background-color: beige;
+}
+
+.jumbotron {
+    background-color: #89cff0;
+    border-bottom: 5px solid black;
+}
+
+h3{
+    font-family: 'Raleway', sans-serif;
+}

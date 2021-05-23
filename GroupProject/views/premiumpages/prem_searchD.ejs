@@ -1,0 +1,48 @@
+<%- include ('partials/header'); -%>
+
+<div>
+    <div class="header">
+        <h1 style='font-size: 60px'>Search Developers</h1>
+    </div>
+    <div class="topnav">
+      <a href = "/welcome" id = "currentPage">Home</a>
+      <a href='/logout'>Logout</a>
+      <a href='/account'>Account</a>
+      <a href = "/searchGames">Search Games</a>
+      <a href = "/searchdevelopers">Search Game Developers</a>
+      <a href = "/gamepicker">Game Picker</a>
+    </div>   
+</div>
+
+<div class='container'>
+    <div class='jumbotron'>
+        <div  align='center'>
+            <img style='border: black' src='company_logos.png' width='500px' height ='300px' /> 
+        </div>
+        
+        </br>
+        </br>
+        
+        <form action='/developerSearch' method='GET'>
+            <div class='form-group row'>
+                <label for='company_name' class='col-sm-4 col-form-label' id="searchDevelopers_padding">Search Developers</label>
+                <div class='col-sm-4'>
+					<select id='company_name' name='company_name' style="width: 250px;">
+						<%companies.forEach(function(company_name){%>
+				            <option id='company_name' name='company_name' value='<%=company_name%>'><%=company_name%></option>
+				        <%});%>
+					</select>
+					
+				</div>
+				<div>
+                    <button class='btn btn-primary'> Search </button>
+                </div>
+                </div>
+            </div>
+        </form>
+        </br>
+        <p><b>Summary provided by:</b> Wikipedia, Steam, Nintendo, and EPIC Games</p>
+    </div>
+</div>
+
+<%- include ('partials/footer'); -%>

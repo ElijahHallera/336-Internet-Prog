@@ -1,0 +1,44 @@
+<%- include('templates/header') -%>
+
+<body>
+        <header>
+            <name1> Computer Science Information </name1>
+            <nav>
+                <ul>
+                    <li> <a href = "/home" id = "currentPage"> Home </a> </li>
+                    <li> <a href = "/proglang"> Programming Languages </a> </li>
+                    <li> <a href = "/viruses"> Viruses </a> </li>
+                    <li> <a href = "/compnet"> Computer Networks </a> </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            
+            <div id = "welcomeText">
+                <p> Welcome! </p>
+            </div>
+            <br />
+            
+            <div id = "boxModel">
+            <p1> This website will provide basic information on: </p>
+                <ol>
+                    <li2> Programming Languages</li2>
+                    <li2> Viruses</li2>
+                    <li2> Computer Networks</li2>  
+                </ol>
+            </div>
+            
+        </main>
+        
+        </br>
+        </br>
+        
+        <h2><center>Random users that uses this information: &emsp; <br/>
+        <%=firstName%>&ensp;<%=lastName%>,&ensp;<%=jobTitle%><br/>
+        <%=firstNameTwo%>&ensp;<%=lastNameTwo%>,&ensp;<%=jobTitleTwo%></center></h2>
+        
+        </br>
+        </br>
+
+<%- include('templates/footer') -%>

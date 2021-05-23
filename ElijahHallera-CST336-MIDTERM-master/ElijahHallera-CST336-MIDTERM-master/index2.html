@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Midterm 1</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+        crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script> 
+        <link href = "app.css" rel = "stylesheet" type = "text/css">
+    </head>
+    
+    
+    <body>
+      <div class="container">
+          <div class="jumbotron" name="Query">
+              <h1>Open Library</h1>
+              <p>Please enter the ISBN of the book you'd like to retrieve</p>
+              <form action="/" method="post" onsubmit="buildLibrary(); return false;">
+                <div class="form-group row">
+                    <label for="ISBN" class="col-sm-2 col-form-label">ISBN</label>
+                    <div class="col-sm-4">
+                        <input type ="text" id = "ISBNnumber">    
+                    </div>
+                    <div class="col-sm-6">
+                        <button class="btn btn-primary" type="submit" id="btnImg" name="btnImg">QUERY</button>  
+                    </div>   
+                </div>
+              </form>
+          </div>
+            
+        <div name = "Result">
+            <div class="col-sm-3">
+                <img class="cover">
+            </div>
+            <div class = "info" class="col-sm-4" >
+                <Label>Title: </Label><span id = "title"></br>
+                <Label>Author: </Label><span id = "name"></br>
+                <Label>Publish Year: </Label><span id = "publish_date"></br>
+                <Label>Publisher: </Label><span id = "name"></br>
+                <Label>ISBN: </Label><span id = "isbn"></br>
+                <Label>Pages: </Label><span id = "number_of_pages"></br>
+            </div>
+        </div>
+      
+    </div>
+        <script src = "javascript.js"></script>
+    </body>
+</html>

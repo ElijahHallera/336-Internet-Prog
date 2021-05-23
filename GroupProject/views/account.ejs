@@ -1,0 +1,63 @@
+<%- include ('partials/header'); -%>
+ 
+ <div>
+    <div class="header">
+        <h1 style='font-size: 60px'>ACCOUNT</h1>
+    </div>
+    <div class="topnav">
+      <a href = "/welcome" id = "currentPage">Home</a>
+      <a href='/logout'>Logout</a>
+      <a href='/account'>Account</a>
+      <a href = "/searchGames">Search Games</a>
+      <a href = "/searchdevelopers">Search Game Developers</a>
+    </div>   
+</div>
+
+        <form action="/account/<%=profile.id%>/checkdelete" method="POST">
+            <div class="container" align='center'>
+                 </br>
+                </br>
+                <h1>ACCOUNT INFORMATION</h1>
+                <label for="username"><b>Username:</b> <%=profile.username%></label><br>
+                <label for="password"><b>Password:</b> <%=profile.password%></label><br>
+                 </br>
+                    </br>
+                <hr><br><br>
+                    
+                    
+                <h3>DELETE YOUR ACCOUNT?</h3><br>
+                    
+                <%if(typeof error != 'undefined' && error){%>
+                    <h6 style='color: red;'> Incorrect password! </h6>
+                <%}%>
+                    
+                <label for="psw" id="pswlab"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw">
+                    
+                    
+                    <button type="delete" class="btn btn-danger">Delete Account</button>
+                    </br>
+                    </br>
+            </div>
+        </form>
+        
+        <form action='/account/<%=profile.id%>/edit?_method=PUT' method="POST">
+            <div class="container" align='center'>
+                <br><hr><br>
+                <h1>EDIT INFORMATION</h1>
+                </br>
+                </br>
+                <label for="username"><b>New Username</b></label>
+                <input type="text" placeholder="Enter new username" id="username" name="username" value='<%=profile.username%>' required>
+                </br>
+                <label for="password"><b> New Password</b></label>
+                <input type="text" placeholder="Enter new password" name="password" value='<%=profile.password%>' required>
+                </br>
+                </br>
+                <button type="submit" class='btn btn-primary'> Edit Information</button>  
+                </br>
+                </br>
+            </div>
+        </form>
+        
+<%- include ('partials/footer'); -%>

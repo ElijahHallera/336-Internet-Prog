@@ -1,0 +1,83 @@
+<%- include ('templates/header'); -%>
+
+<div class='container'>
+	<div class='jumbotron'>
+		<h1 align="center"> Quotes Database </h1><br>
+		<h3 align="center"> <strong>Search by Name</strong> </h3>
+	    <hr>
+		<form action='/author' method='GET'>
+			<div class='form-group row'>
+				<label for='firstname' class='col-sm-4 col-form-label'>First Name</label>
+				<div class='col-sm-4'>
+					<input type='text' class='form-control' id='firstname' name='firstname' placeholder='John' required>
+				</div>
+			</div>
+			<div class='form-group row'>
+				<label for='lastname' class='col-sm-4 col-form-label'>Last Name</label>
+				<div class='col-sm-4'>
+					<input type='text' class='form-control' id='lastname' name='lastname' placeholder='Snow' required>
+				</div>
+			</div>
+			<div class='form-group row'>
+				<div class='col-sm-4'></div>
+				<div class='col-sm-4'>
+					<button class='btn btn-primary'>Search</button>
+				</div>
+				<div class='col-sm-4'></div>
+			</div>
+		</form>
+		<hr>
+			
+		<br>
+		<h3 align="center"><strong>Search by Gender</strong></h3>
+		<hr>
+		<form action='/gender' method='GET'>
+			<div class='form-group row'>
+				<label for='gender' class='col-sm-4 col-form-label'>Gender</label>
+				<div class='col-sm-4'>
+					<label for="male">Male</label>
+					<input type="radio" id="male" name="gender" value="M" required>
+					&ensp;
+					<label for="female">Female</label>
+					<input type="radio" id="female" name="gender" value="F" required>
+				</div>
+				<button class='btn btn-primary'>Search</button>
+			</div>
+		</form>
+		<hr>
+		
+		<br>
+		<h3 align="center"><strong>Search by a Keyboard</strong></h3>
+		<hr>
+		<form action='/keyword' method='GET'>
+			<div class='form-group row'>
+				<label for='keyword' class='col-sm-4 col-form-label'>Keyword</label>
+				<div class='col-sm-4'>
+					<input type='text' class='form-control' id='keyword' name='keyword' placeholder='success' required>
+				</div>
+				<button class='btn btn-primary'>Search</button>
+			</div>
+		</form>
+		<hr>
+		
+		<br>
+		<h3 align="center"><strong>Search by a Country</strong></h3>
+		<hr>
+		<form action='/category' method='GET'>
+			<div class='form-group row'>
+				<label for='country' class='col-sm-4 col-form-label'>Country</label>
+				<div class='col-sm-4'>
+					<select id="country" name="country">
+						<%countries.forEach(function(country){%>
+				            <option id="country" name ="country" value='<%=country%>'><%=country%></option>
+				        <%});%>
+					</select>
+				</div>
+				<button class='btn btn-primary'>Search</button>
+			</div>
+		</form>
+		
+	</div>
+</div>
+
+<%- include ('templates/footer'); -%>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Project 2</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+        crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script> 
+        <link href = "css/app.css" rel = "stylesheet" type = "text/css">
+        <script src = "js/javascript.js" async></script>
+    </head>
+    
+    <body class = "text-center">
+        <header id = "shoppingHEADER">
+            <nav class="navbar navbar-dark bg-dark">
+              <h1> Shopping Cart </h1>
+                    <ul>
+                        <li> <a href = "index.html" class = "shoppingA"> Home </a> </li>
+                        <li> <a href = "shoppingcart.html" id = "currentPage" class = "shoppingA"> Shopping Cart </a> </li>
+                    </ul>
+            </nav>
+        </header>
+		</br>
+		</br>
+		
+        <section>
+            <button id = "banana-fact" class = "btn btn-primary"> Banana fact! </button>
+		    </br>
+		    </br>
+            <h2>Produce</h2>
+            <div class="items">
+            <div>
+                <span class="title">Bananas</span>
+                <img class="food_image" src="images/banana-sticker.jpg">
+                <div class="details">
+                    <span class="shop_price">$0.19</span>
+                    <button class="btn btn-primary shop_button" type="button">ADD TO CART</button>
+            </div>
+            
+            </div>
+            <div>
+                <span class="title">Apples</span>
+                <img class="food_image" src="images/Apple.jpg">
+                <div class="details">
+                    <span class="shop_price">$1.49</span>
+                    <button class="btn btn-primary shop_button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            </div>
+        </section>
+        
+        </br>
+		</br>
+        <button id = "apple-fact" class = "btn btn-primary"> Apple fact! </button>
+		</br>
+		</br>
+        
+        <section>
+            <h2>CART</h2>
+            <div class="list">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            </br>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total + Tax:</strong>
+                <span class="total-price">$0</span>
+            </div>
+            </br>
+            </br>
+        </section>
+
+    </body>
+</html>

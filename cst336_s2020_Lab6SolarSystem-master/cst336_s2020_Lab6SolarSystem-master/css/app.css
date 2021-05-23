@@ -1,0 +1,64 @@
+.error{
+    color: red;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  /*width: 50%;*/
+}
+
+.fontsize{
+    font-size: 25px;
+    padding-right: 5px;
+}
+
+body{
+    color: white;
+    background-color: black;
+}
+
+img{
+    text-align: center;
+}
+
+nav li:hover{
+    font-size: 1.10em;
+    transition: .9s;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a {
+    font-size: 1em;
+    color: red;
+    border-radius: 15px;
+    justify-content: space-between;
+}
+
+header {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-bottom: 5px solid red;
+}
+
+footer {
+    padding: 10px;
+    background-color: #777B7E;
+    clear: left;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+    border-top: 5px solid red;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Pixabay Search</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+         rel="stylesheet" 
+         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+         crossorigin="anonymous">
+        <link href = "styles.css" rel = "stylesheet" type = "text/css">  
+    </head>
+    
+    <body>
+        <h1 class = "jumbotron"> Pixabay Search</h1>
+        
+        <form action="/results" method="GET">
+            
+            <label><strong>Keyword:</strong> <input type="text" name="keyword"></label>
+            <select id = "orientation" name = "orientation" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <option value = "horizontal">Horizontal </option>
+                <option value = "vertical">Vertical</option>
+            </select>
+            <button class="btn btn-info"> Search! </button>
+            
+        </form> <br>
+        
+        <h3> Welcome Please Search for an Image!</h3>
+        
+        <%let Index = Math.floor(Math.random() * 15);%> <!--this generates an image between 1 and 15 -->
+        <%let Index2 = Math.floor(Math.random() * 15);%>
+        <%let Index3 = Math.floor(Math.random() * 15);%>
+        <%let Index4 = Math.floor(Math.random() * 15);%>
+    
+    <div class = "flex-container">
+        <label><span><%=images.hits[Index].likes%></span>&ensp;Likes</label>
+        <img src='<%= images.hits[Index].largeImageURL %>' width='250'>
+        </br>
+        <label><span><%=images.hits[Index2].likes%></span>&ensp;Likes</label>
+        <img src='<%= images.hits[Index2].largeImageURL %>' width='250'>
+        </br>
+        <label><span><%=images.hits[Index3].likes%></span>&ensp;Likes</label>
+        <img src='<%= images.hits[Index3].largeImageURL %>' width='250'>
+        </br>
+        <label><span><%=images.hits[Index4].likes%></span>&ensp;Likes</label>
+        <img src='<%= images.hits[Index4].largeImageURL %>' width='250'>
+        </br> 
+    </div>
+
+    </body>
+</html>

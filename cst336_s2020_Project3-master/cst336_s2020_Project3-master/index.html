@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Midterm 1</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+        crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script> 
+        <link href = "app.css" rel = "stylesheet" type = "text/css">
+    </head>
+    
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <h1> Weather Application </h1>
+            <ul>
+                <li> <a href = "index.html" id = "currentPage" class = "homeA"> Home </a> </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <body>
+        <div class = "jumbotron">
+            <h2 class = "text-center"> Get Weather Information</h2>
+        </div>
+        </br>
+        
+        <div>
+            <div>
+                <h3 class = "text-center">Enter a City Name</h3>
+                <span id = "error"></span>
+            </div>
+            
+            <div class = "center">
+               <center><input type="text" name = "city" id = "city" placeholder = "Enter City Name"> <button id = "submitWeather" class="btn btn-primary"> Search City </button></center>
+            </div>
+            </br>
+            <div class="flex-container"></div>
+            <div id = "show"></div>
+        </div>
+
+        </br>
+        </br>
+        <footer class = "bg-dark">
+        <font size = "3.5" color = "white">
+        CST 336. 2020&copy; Hallera <br />
+        <strong>Disclaimer:</strong> This
+        It is used for academic purposes only. <br />
+        </font>
+        <br />
+            
+    </footer>
+        <script src = "javascript.js"></script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+body{
+    text-align:center;
+    background-image: url("../img/SPACE.jpg");
+    background-size: cover;
+}
+
+.jumbotron {
+    background-color: black;
+    color: red;
+}
+
+#directions {
+    background-color:black;
+    color: red;
+    font-size: 2em;    
+    width:900px;
+    height:200px;
+    margin:0 auto;
+    border-radius:20px;
+}
